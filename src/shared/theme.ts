@@ -3,6 +3,7 @@ export const COLORS = {
     secondary: '',
 
     bg_body: '#fff',
+    text_soft: '#6b7280'
 }
 
 // FONTS

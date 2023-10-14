@@ -26,6 +26,14 @@ const SHADOWS = StyleSheet.create({
     },
 })
 
+
+export const TYPOGRAPHY = StyleSheet.create({
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    }
+})
+
 export const GLOBALS = StyleSheet.create({
     container: {
         flex: 1,
@@ -35,7 +43,7 @@ export const GLOBALS = StyleSheet.create({
 
     // CATEGORIES
     categories_list: {
-        paddingVertical: 5
+        marginBottom: 20
     },
 
     category_button: {
@@ -48,6 +56,27 @@ export const GLOBALS = StyleSheet.create({
         marginVertical: 10,
         marginLeft: 15,
         ...SHADOWS.shadow_md
+    },
+
+    // PRODUCTS
+    products_list: {
+        flex: 1,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
+        paddingTop: 10,
+        paddingBottom: 20,
+        rowGap: 20,
+    },
+
+    product_card: {
+        borderRadius: 10,
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+        width: '48%',
+        backgroundColor: '#fff',
+        ...SHADOWS.shadow_md
     }
+
 })
 

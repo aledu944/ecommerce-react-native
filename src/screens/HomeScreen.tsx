@@ -1,7 +1,7 @@
 import { View, Text, ScrollView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { GLOBALS } from '../shared/globals';
-import { CategoriesList } from '../components';
+import { CategoriesList, ProductList } from '../components';
 
 export const HomeScreen = () => {
     return (
@@ -9,7 +9,7 @@ export const HomeScreen = () => {
             <StatusBar style="auto" />
             
             <CategoriesList/>
-            
+            <ProductList/>
         </ScrollView>
     )
 }
