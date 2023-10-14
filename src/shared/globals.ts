@@ -95,6 +95,16 @@ export const GLOBALS = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#fff',
         ...SHADOWS.shadow_sm,
+    },
+
+    buy_button: {
+        backgroundColor: COLORS.primary,
+        borderRadius: 10,
+        paddingVertical: 10,
+        ...SHADOWS.shadow_md,
+        marginVertical: 10,
+        marginBottom: 20,
+        textAlign: 'center',
     }
 
 })

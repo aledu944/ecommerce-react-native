@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen } from '../screens/HomeScreen';
 import { COLORS } from '../shared/theme';
+import { HomeScreen } from '../screens/HomeScreen';
+import { ProductScreen } from '../screens/ProductScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -11,16 +12,19 @@ export const MainNavigator = () => {
             initialRouteName='HomeScreen'
             screenOptions={{
                 headerTitleAlign: 'center',
-                headerShown: false,
+                
                 headerShadowVisible: false,
                 navigationBarColor: COLORS.bg_body,
+                headerShown: false,
                 contentStyle: {
+                    
                     backgroundColor: COLORS.bg_body,
                 }
             }}
         >
 
-            <Stack.Screen name="HomeScreen" options={{ title: 'eCommerce' }} component={HomeScreen} />
+            <Stack.Screen name="HomeScreen" component={HomeScreen} />
+            <Stack.Screen name="ProductScreen" component={ProductScreen} />
         </Stack.Navigator>
     )
 }
