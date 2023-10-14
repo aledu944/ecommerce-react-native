@@ -31,6 +31,11 @@ export const TYPOGRAPHY = StyleSheet.create({
     title: {
         fontSize: 20,
         fontWeight: 'bold',
+    },
+
+    sub_title: {
+        fontSize: 18,
+        fontWeight: '500',
     }
 })
 
@@ -43,7 +48,7 @@ export const GLOBALS = StyleSheet.create({
 
     // CATEGORIES
     categories_list: {
-        marginBottom: 20
+        marginBottom: 30
     },
 
     category_button: {
@@ -76,6 +81,20 @@ export const GLOBALS = StyleSheet.create({
         width: '48%',
         backgroundColor: '#fff',
         ...SHADOWS.shadow_md
+    },
+
+    search_input: {
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent:'space-between',
+        paddingVertical: 7,
+        marginBottom: 30,
+        paddingHorizontal: 10,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 0, 0,0.025)',
+        borderRadius: 10,
+        backgroundColor: '#fff',
+        ...SHADOWS.shadow_sm,
     }
 
 })

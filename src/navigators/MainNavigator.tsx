@@ -11,6 +11,7 @@ export const MainNavigator = () => {
             initialRouteName='HomeScreen'
             screenOptions={{
                 headerTitleAlign: 'center',
+                headerShown: false,
                 headerShadowVisible: false,
                 navigationBarColor: COLORS.bg_body,
                 contentStyle: {
